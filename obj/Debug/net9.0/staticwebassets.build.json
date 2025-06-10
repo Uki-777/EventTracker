@@ -1,0 +1,1042 @@
+{
+  "Version": 1,
+  "Hash": "xHmEqwf/89GzksziQuW4A/IpyAzeribD3cU/DnyIEcw=",
+  "Source": "EventTrackerApi",
+  "BasePath": "_content/EventTrackerApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EventTrackerApi\\wwwroot",
+      "Source": "EventTrackerApi",
+      "ContentRoot": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\",
+      "BasePath": "_content/EventTrackerApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\4r88udyndz-gqvw9h7smn.gz",
+      "SourceId": "EventTrackerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/EventTrackerApi",
+      "RelativePath": "script#[.{fingerprint=gqvw9h7smn}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\script.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "qmaos0b7rb",
+      "Integrity": "Lqjgur0sthbAhY4N9FIWEwCbpVWG1tqU8vZuolunKkk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\script.js"
+    },
+    {
+      "Identity": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\758uxokes0-ajtus5x16l.gz",
+      "SourceId": "EventTrackerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/EventTrackerApi",
+      "RelativePath": "index#[.{fingerprint=ajtus5x16l}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "h7ct0p2b4m",
+      "Integrity": "8zjaFE2dT/fVD3BnT0WxGKbGuIa/COGi60UzKXFMATw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\tno2fx9vc5-cwvm632k9y.gz",
+      "SourceId": "EventTrackerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/EventTrackerApi",
+      "RelativePath": "styles#[.{fingerprint=cwvm632k9y}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jttd9d1wsa",
+      "Integrity": "N+WVdUhScLZrkIcanI5ATK3q9AreKlaGG+sJvNQdq5o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\index.html",
+      "SourceId": "EventTrackerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\",
+      "BasePath": "_content/EventTrackerApi",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ajtus5x16l",
+      "Integrity": "+u59Q9HdLCTBYf6euCVegEqsGbeyRb8WJMdOCtzjiP8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\script.js",
+      "SourceId": "EventTrackerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\",
+      "BasePath": "_content/EventTrackerApi",
+      "RelativePath": "script#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gqvw9h7smn",
+      "Integrity": "WJqiB91usAznbr7e1slDOiM82eQVKV7RPL/hBEQw0wM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script.js"
+    },
+    {
+      "Identity": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\styles.css",
+      "SourceId": "EventTrackerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\",
+      "BasePath": "_content/EventTrackerApi",
+      "RelativePath": "styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cwvm632k9y",
+      "Integrity": "/Bw2/JBhrppgOIQtC6jE003UFfAOsDBtuMUVZaPA4II=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.ajtus5x16l.html",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\758uxokes0-ajtus5x16l.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000352485019"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2836"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8zjaFE2dT/fVD3BnT0WxGKbGuIa/COGi60UzKXFMATw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 09:40:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+u59Q9HdLCTBYf6euCVegEqsGbeyRb8WJMdOCtzjiP8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ajtus5x16l"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+u59Q9HdLCTBYf6euCVegEqsGbeyRb8WJMdOCtzjiP8="
+        }
+      ]
+    },
+    {
+      "Route": "index.ajtus5x16l.html",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+u59Q9HdLCTBYf6euCVegEqsGbeyRb8WJMdOCtzjiP8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 09:40:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ajtus5x16l"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+u59Q9HdLCTBYf6euCVegEqsGbeyRb8WJMdOCtzjiP8="
+        }
+      ]
+    },
+    {
+      "Route": "index.ajtus5x16l.html.gz",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\758uxokes0-ajtus5x16l.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2836"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8zjaFE2dT/fVD3BnT0WxGKbGuIa/COGi60UzKXFMATw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 09:40:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ajtus5x16l"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8zjaFE2dT/fVD3BnT0WxGKbGuIa/COGi60UzKXFMATw="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\758uxokes0-ajtus5x16l.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000352485019"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2836"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8zjaFE2dT/fVD3BnT0WxGKbGuIa/COGi60UzKXFMATw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 09:40:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+u59Q9HdLCTBYf6euCVegEqsGbeyRb8WJMdOCtzjiP8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+u59Q9HdLCTBYf6euCVegEqsGbeyRb8WJMdOCtzjiP8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+u59Q9HdLCTBYf6euCVegEqsGbeyRb8WJMdOCtzjiP8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 09:40:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+u59Q9HdLCTBYf6euCVegEqsGbeyRb8WJMdOCtzjiP8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\758uxokes0-ajtus5x16l.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2836"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8zjaFE2dT/fVD3BnT0WxGKbGuIa/COGi60UzKXFMATw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 09:40:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8zjaFE2dT/fVD3BnT0WxGKbGuIa/COGi60UzKXFMATw="
+        }
+      ]
+    },
+    {
+      "Route": "script.gqvw9h7smn.js",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\4r88udyndz-gqvw9h7smn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000685400960"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1458"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lqjgur0sthbAhY4N9FIWEwCbpVWG1tqU8vZuolunKkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 10:03:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"WJqiB91usAznbr7e1slDOiM82eQVKV7RPL/hBEQw0wM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gqvw9h7smn"
+        },
+        {
+          "Name": "label",
+          "Value": "script.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WJqiB91usAznbr7e1slDOiM82eQVKV7RPL/hBEQw0wM="
+        }
+      ]
+    },
+    {
+      "Route": "script.gqvw9h7smn.js",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WJqiB91usAznbr7e1slDOiM82eQVKV7RPL/hBEQw0wM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 10:03:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gqvw9h7smn"
+        },
+        {
+          "Name": "label",
+          "Value": "script.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WJqiB91usAznbr7e1slDOiM82eQVKV7RPL/hBEQw0wM="
+        }
+      ]
+    },
+    {
+      "Route": "script.gqvw9h7smn.js.gz",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\4r88udyndz-gqvw9h7smn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lqjgur0sthbAhY4N9FIWEwCbpVWG1tqU8vZuolunKkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 10:03:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gqvw9h7smn"
+        },
+        {
+          "Name": "label",
+          "Value": "script.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lqjgur0sthbAhY4N9FIWEwCbpVWG1tqU8vZuolunKkk="
+        }
+      ]
+    },
+    {
+      "Route": "script.js",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\4r88udyndz-gqvw9h7smn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000685400960"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1458"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lqjgur0sthbAhY4N9FIWEwCbpVWG1tqU8vZuolunKkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 10:03:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"WJqiB91usAznbr7e1slDOiM82eQVKV7RPL/hBEQw0wM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WJqiB91usAznbr7e1slDOiM82eQVKV7RPL/hBEQw0wM="
+        }
+      ]
+    },
+    {
+      "Route": "script.js",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WJqiB91usAznbr7e1slDOiM82eQVKV7RPL/hBEQw0wM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 10:03:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WJqiB91usAznbr7e1slDOiM82eQVKV7RPL/hBEQw0wM="
+        }
+      ]
+    },
+    {
+      "Route": "script.js.gz",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\4r88udyndz-gqvw9h7smn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1458"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lqjgur0sthbAhY4N9FIWEwCbpVWG1tqU8vZuolunKkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 10:03:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lqjgur0sthbAhY4N9FIWEwCbpVWG1tqU8vZuolunKkk="
+        }
+      ]
+    },
+    {
+      "Route": "styles.css",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\tno2fx9vc5-cwvm632k9y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000361141206"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2768"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N+WVdUhScLZrkIcanI5ATK3q9AreKlaGG+sJvNQdq5o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 06:47:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/Bw2/JBhrppgOIQtC6jE003UFfAOsDBtuMUVZaPA4II=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/Bw2/JBhrppgOIQtC6jE003UFfAOsDBtuMUVZaPA4II="
+        }
+      ]
+    },
+    {
+      "Route": "styles.css",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12663"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/Bw2/JBhrppgOIQtC6jE003UFfAOsDBtuMUVZaPA4II=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 06:47:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/Bw2/JBhrppgOIQtC6jE003UFfAOsDBtuMUVZaPA4II="
+        }
+      ]
+    },
+    {
+      "Route": "styles.css.gz",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\tno2fx9vc5-cwvm632k9y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N+WVdUhScLZrkIcanI5ATK3q9AreKlaGG+sJvNQdq5o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 06:47:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N+WVdUhScLZrkIcanI5ATK3q9AreKlaGG+sJvNQdq5o="
+        }
+      ]
+    },
+    {
+      "Route": "styles.cwvm632k9y.css",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\tno2fx9vc5-cwvm632k9y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000361141206"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2768"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N+WVdUhScLZrkIcanI5ATK3q9AreKlaGG+sJvNQdq5o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 06:47:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"/Bw2/JBhrppgOIQtC6jE003UFfAOsDBtuMUVZaPA4II=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwvm632k9y"
+        },
+        {
+          "Name": "label",
+          "Value": "styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/Bw2/JBhrppgOIQtC6jE003UFfAOsDBtuMUVZaPA4II="
+        }
+      ]
+    },
+    {
+      "Route": "styles.cwvm632k9y.css",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\wwwroot\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12663"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/Bw2/JBhrppgOIQtC6jE003UFfAOsDBtuMUVZaPA4II=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 06:47:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwvm632k9y"
+        },
+        {
+          "Name": "label",
+          "Value": "styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/Bw2/JBhrppgOIQtC6jE003UFfAOsDBtuMUVZaPA4II="
+        }
+      ]
+    },
+    {
+      "Route": "styles.cwvm632k9y.css.gz",
+      "AssetFile": "C:\\Users\\lukas\\EventTrackerApi\\obj\\Debug\\net9.0\\compressed\\tno2fx9vc5-cwvm632k9y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2768"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N+WVdUhScLZrkIcanI5ATK3q9AreKlaGG+sJvNQdq5o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 06:47:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cwvm632k9y"
+        },
+        {
+          "Name": "label",
+          "Value": "styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N+WVdUhScLZrkIcanI5ATK3q9AreKlaGG+sJvNQdq5o="
+        }
+      ]
+    }
+  ]
+}

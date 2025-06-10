@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Śledzenie Wydarzeń | Local Event Statystyki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-calendar-alt"></i>
+                <h1>Śledzenie Wydarzeń</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="active" id="dashboard-tab">Panel</a></li>
+                    <li><a href="#" id="add-event-tab">Dodaj wydarzenie</a></li>
+                    <li><a href="#" id="analytics-tab">Statystyki</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button class="btn btn-outline" id="login-btn">Zaloguj się</button>
+                <button class="btn btn-primary" id="signup-btn">Zarejestruj się</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Panel Section -->
+            <section class="content-section active" id="dashboard">
+                <div class="stats-header">
+                    <h2>Event Panel</h2>
+                    <div class="date-filter">
+                        <select id="time-period">
+                            <option value="week">Ostatnie 7 dni</option>
+                            <option value="month">Ostatnie 30 dni</option>
+                            <option value="quarter">Ostatnie 90 dni</option>
+                            <option value="year">Ostatnie 365 dni</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Liczba wydarzeń</h3>
+                            <p class="stat-value" id="total-events">0</p>
+                            <p class="stat-change"><span id="events-change">0%</span> od poprzedniego okresu</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Łączne zainteresowanie</h3>
+                            <p class="stat-value" id="total-interest">0</p>
+                            <p class="stat-change"><span id="interest-change">0%</span> od poprzedniego okresu</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Aktywne lokalizacje</h3>
+                            <p class="stat-value" id="active-locations">0</p>
+                            <p class="stat-change"><span id="locations-change">0%</span> od poprzedniego okresu</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Popularna kategoria</h3>
+                            <p class="stat-value" id="popular-category">-</p>
+                            <p class="stat-change"><span id="category-change">0%</span> od poprzedniego okresu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recent-events">
+                    <h3>Ostatnie wydarzenia</h3>
+                    <div class="events-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nazwa wydarzenia</th>
+                                    <th>Lokalizacja</th>
+                                    <th>Data</th>
+                                    <th>Kategoria</th>
+                                    <th>Zainteresowanie</th>
+                                    <th>Akcje</th>
+                                </tr>
+                            </thead>
+                            <tbody id="events-table-body">
+                                <!-- Events will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dodaj wydarzenie Section -->
+            <section class="content-section" id="add-event">
+                <div class="form-header">
+                    <h2>Dodaj nowe wydarzenie</h2>
+                    <p>Udostępnij szczegóły planowanego wydarzenia</p>
+                </div>
+
+                <form id="event-form">
+                    <div class="form-group">
+                        <label for="event-name">Nazwa wydarzenia</label>
+                        <input type="text" id="event-name" placeholder="Wprowadź nazwę wydarzenia" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="event-date">Data & Time</label>
+                            <input type="datetime-local" id="event-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event-category">Kategoria</label>
+                            <select id="event-category" required>
+                                <option value="">Wybierz kategorię</option>
+                                <option value="concert">Concert</option>
+                                <option value="sports">Sports</option>
+                                <option value="festival">Festival</option>
+                                <option value="conference">Conference</option>
+                                <option value="exhibition">Exhibition</option>
+                                <option value="community">Community</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event-location">Lokalizacja</label>
+                        <div class="location-input">
+                            <input type="text" id="event-location" placeholder="Wprowadź lokalizację" required>
+                            <button type="button" id="location-btn" class="btn btn-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event-description">Opis</label>
+                        <textarea id="event-description" rows="4" placeholder="Wprowadź opis wydarzenia"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event-image">Obraz wydarzenia</label>
+                        <div class="image-upload">
+                            <label for="event-image" class="upload-label">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span>Kliknij, aby przesłać obraz</span>
+                            </label>
+                            <input type="file" id="event-image" accept="image/*">
+                            <div class="image-preview" id="image-preview"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-outline">Wyczyść</button>
+                        <button type="submit" class="btn btn-primary">Dodaj wydarzenie</button>
+                    </div>
+                </form>
+                    <h2>Lista wydarzeń</h2>
+                        <table id="event-table" border="1">
+                        <thead>
+                            <tr>
+                                <th>Nazwa</th>
+                                <th>Data</th>
+                                <th>Kategoria</th>
+                                <th>Lokalizacja</th>
+                                <th>Opis</th>
+                            </tr>
+                        </thead>
+  <tbody id="event-table-body">
+    <!-- tutaj będą wiersze JS -->
+  </tbody>
+</table>
+
+            </section>
+
+            <!-- Statystyki Section -->
+            <section class="content-section" id="analytics">
+                <div class="analytics-header">
+                    <h2>Event Statystyki</h2>
+                    <div class="analytics-filters">
+                        <select id="analytics-period">
+                            <option value="week">Ostatnie 7 dni</option>
+                            <option value="month">Ostatnie 30 dni</option>
+                            <option value="quarter">Ostatnie 90 dni</option>
+                            <option value="year">Ostatnie 365 dni</option>
+                        </select>
+                        <select id="analytics-region">
+                            <option value="all">Wszystkie regiony</option>
+                            <option value="north">Północ</option>
+                            <option value="south">Południe</option>
+                            <option value="east">Wschód</option>
+                            <option value="west">Zachód</option>
+                            <option value="central">Centrum</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="analytics-charts">
+                    <div class="chart-container">
+                        <h3>Wydarzenia w czasie</h3>
+                        <canvas id="events-over-time-chart"></canvas>
+                    </div>
+
+                    <div class="chart-container">
+                        <h3>Events by Kategoria</h3>
+                        <canvas id="events-by-category-chart"></canvas>
+                    </div>
+
+                    <div class="chart-container full-width">
+                        <h3>Top Lokalizacjas</h3>
+                        <canvas id="top-locations-chart"></canvas>
+                    </div>
+
+                    <div class="chart-container">
+                        <h3>Zainteresowanie Distribution</h3>
+                        <canvas id="interest-distribution-chart"></canvas>
+                    </div>
+
+                    <div class="chart-container">
+                        <h3>Typy wydarzeń</h3>
+                        <canvas id="event-types-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="analytics-table">
+                    <h3>Detailed Statystyki</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Lokalizacja</th>
+                                    <th>Liczba wydarzeń</th>
+                                    <th>Łączne zainteresowanie</th>
+                                    <th>Avg. Zainteresowanie</th>
+                                    <th>Top Kategoria</th>
+                                </tr>
+                            </thead>
+                            <tbody id="analytics-table-body">
+                                <!-- Statystyki data will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Śledzenie Wydarzeń</span>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">O nas</a></li>
+                        <li><a href="#">Prywatność</a></li>
+                        <li><a href="#">Regulamin</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 Śledzenie Wydarzeń. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Zaloguj się to Śledzenie Wydarzeń</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="Wprowadź swój adres e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Hasło</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Zaloguj się</button>
+                </div>
+            </form>
+            <div class="auth-links">
+                <p>Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+                <p><a href="#">Forgot password?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Utwórz konto</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Imię i nazwisko</label>
+                    <input type="text" id="signup-name" placeholder="Wprowadź swoje imię i nazwisko" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Wprowadź swój adres e-mail" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="signup-password">Hasło</label>
+                        <input type="password" id="signup-password" placeholder="Utwórz hasło" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-confirm">Confirm Hasło</label>
+                        <input type="password" id="signup-confirm" placeholder="Potwierdź swoje hasło" required>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Zarejestruj się</button>
+                </div>
+            </form>
+            <div class="auth-links">
+                <p>Already have an account? <a href="#" id="login-link">Zaloguj się</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
