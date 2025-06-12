@@ -40,5 +40,19 @@ namespace EventTrackerApi.Controllers
             var events = await _context.Events.ToListAsync();
             return Ok(events);
         }
+
+        // <-- Dodana metoda DELETE:
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteEvent(int id)
+        {
+            var ev = await _context.Events.FindAsync(id);
+            if (ev == null)
+                return NotFound(new { message = "Wydarzenie nie istnieje" });
+
+            _context.Events.Remove(ev);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
     }
 }

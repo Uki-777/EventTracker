@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Śledzenie Wydarzeń | Local Event Statystyki</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -52,7 +52,6 @@
                         <div class="stat-info">
                             <h3>Liczba wydarzeń</h3>
                             <p class="stat-value" id="total-events">0</p>
-                            <p class="stat-change"><span id="events-change">0%</span> od poprzedniego okresu</p>
                         </div>
                     </div>
 
@@ -63,7 +62,6 @@
                         <div class="stat-info">
                             <h3>Łączne zainteresowanie</h3>
                             <p class="stat-value" id="total-interest">0</p>
-                            <p class="stat-change"><span id="interest-change">0%</span> od poprzedniego okresu</p>
                         </div>
                     </div>
 
@@ -74,7 +72,6 @@
                         <div class="stat-info">
                             <h3>Aktywne lokalizacje</h3>
                             <p class="stat-value" id="active-locations">0</p>
-                            <p class="stat-change"><span id="locations-change">0%</span> od poprzedniego okresu</p>
                         </div>
                     </div>
 
@@ -85,7 +82,6 @@
                         <div class="stat-info">
                             <h3>Popularna kategoria</h3>
                             <p class="stat-value" id="popular-category">-</p>
-                            <p class="stat-change"><span id="category-change">0%</span> od poprzedniego okresu</p>
                         </div>
                     </div>
                 </div>
@@ -101,18 +97,15 @@
                                     <th>Data</th>
                                     <th>Kategoria</th>
                                     <th>Zainteresowanie</th>
-                                    <th>Akcje</th>
+                                    <th>Akcje</th> 
                                 </tr>
                             </thead>
                             <tbody id="events-table-body">
-                                <!-- Events will be populated here -->
                             </tbody>
                         </table>
                     </div>
                 </div>
-            </section>
-
-            <!-- Dodaj wydarzenie Section -->
+            </section>l
             <section class="content-section" id="add-event">
                 <div class="form-header">
                     <h2>Dodaj nowe wydarzenie</h2>
@@ -122,13 +115,13 @@
                 <form id="event-form">
                     <div class="form-group">
                         <label for="event-name">Nazwa wydarzenia</label>
-                        <input type="text" id="event-name" placeholder="Wprowadź nazwę wydarzenia" required>
+                        <input type="text" id="event-name" placeholder="Wprowadź nazwę wydarzenia" required />
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
                             <label for="event-date">Data & Time</label>
-                            <input type="datetime-local" id="event-date" required>
+                            <input type="datetime-local" id="event-date" required />
                         </div>
                         <div class="form-group">
                             <label for="event-category">Kategoria</label>
@@ -148,7 +141,7 @@
                     <div class="form-group">
                         <label for="event-location">Lokalizacja</label>
                         <div class="location-input">
-                            <input type="text" id="event-location" placeholder="Wprowadź lokalizację" required>
+                            <input type="text" id="event-location" placeholder="Wprowadź lokalizację" required />
                             <button type="button" id="location-btn" class="btn btn-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </button>
@@ -167,7 +160,7 @@
                                 <i class="fas fa-cloud-upload-alt"></i>
                                 <span>Kliknij, aby przesłać obraz</span>
                             </label>
-                            <input type="file" id="event-image" accept="image/*">
+                            <input type="file" id="event-image" accept="image/*" />
                             <div class="image-preview" id="image-preview"></div>
                         </div>
                     </div>
@@ -177,22 +170,22 @@
                         <button type="submit" class="btn btn-primary">Dodaj wydarzenie</button>
                     </div>
                 </form>
-                    <h2>Lista wydarzeń</h2>
-                        <table id="event-table" border="1">
-                        <thead>
-                            <tr>
-                                <th>Nazwa</th>
-                                <th>Data</th>
-                                <th>Kategoria</th>
-                                <th>Lokalizacja</th>
-                                <th>Opis</th>
-                            </tr>
-                        </thead>
-  <tbody id="event-table-body">
-    <!-- tutaj będą wiersze JS -->
-  </tbody>
-</table>
 
+                <h2>Lista wydarzeń</h2>
+                <table id="event-table" border="1">
+                    <thead>
+                        <tr>
+                            <th>Nazwa</th>
+                            <th>Data</th>
+                            <th>Kategoria</th>
+                            <th>Lokalizacja</th>
+                            <th>Opis</th>
+                        </tr>
+                    </thead>
+                    <tbody id="event-table-body">
+                        <!-- tutaj będą wiersze JS -->
+                    </tbody>
+                </table>
             </section>
 
             <!-- Statystyki Section -->
@@ -295,63 +288,145 @@
 
     <div class="modal" id="login-modal">
         <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Zaloguj się to Śledzenie Wydarzeń</h2>
+            <span class="close" id="close-login">&times;</span>
+            <h2>Zaloguj się</h2>
             <form id="login-form">
                 <div class="form-group">
                     <label for="login-email">Email</label>
-                    <input type="email" id="login-email" placeholder="Wprowadź swój adres e-mail" required>
+                    <input type="email" id="login-email" required />
                 </div>
                 <div class="form-group">
                     <label for="login-password">Hasło</label>
-                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                    <input type="password" id="login-password" required />
                 </div>
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">Zaloguj się</button>
-                </div>
+                <button type="submit" class="btn btn-primary">Zaloguj się</button>
             </form>
-            <div class="auth-links">
-                <p>Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
-                <p><a href="#">Forgot password?</a></p>
-            </div>
         </div>
     </div>
 
-    <div class="modal" id="signup-modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Utwórz konto</h2>
-            <form id="signup-form">
-                <div class="form-group">
-                    <label for="signup-name">Imię i nazwisko</label>
-                    <input type="text" id="signup-name" placeholder="Wprowadź swoje imię i nazwisko" required>
-                </div>
-                <div class="form-group">
-                    <label for="signup-email">Email</label>
-                    <input type="email" id="signup-email" placeholder="Wprowadź swój adres e-mail" required>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="signup-password">Hasło</label>
-                        <input type="password" id="signup-password" placeholder="Utwórz hasło" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="signup-confirm">Confirm Hasło</label>
-                        <input type="password" id="signup-confirm" placeholder="Potwierdź swoje hasło" required>
-                    </div>
-                </div>
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">Zarejestruj się</button>
-                </div>
-            </form>
-            <div class="auth-links">
-                <p>Already have an account? <a href="#" id="login-link">Zaloguj się</a></p>
-            </div>
-        </div>
-    </div>
+    <script>
+        const apiUrl = "http://localhost:5062/events";
 
-    <div class="toast" id="toast"></div>
+        const tabs = {
+            dashboard: document.getElementById("dashboard"),
+            addEvent: document.getElementById("add-event"),
+            analytics: document.getElementById("analytics"),
+        };
 
-    <script src="script.js"></script>
+        // Przełączanie widoków sekcji
+        function showSection(section) {
+            Object.values(tabs).forEach(tab => tab.classList.remove("active"));
+            section.classList.add("active");
+        }
+
+        document.getElementById("dashboard-tab").addEventListener("click", (e) => {
+            e.preventDefault();
+            showSection(tabs.dashboard);
+            setActiveTab("dashboard-tab");
+            fetchEvents();
+        });
+
+        document.getElementById("add-event-tab").addEventListener("click", (e) => {
+            e.preventDefault();
+            showSection(tabs.addEvent);
+            setActiveTab("add-event-tab");
+        });
+
+        document.getElementById("analytics-tab").addEventListener("click", (e) => {
+            e.preventDefault();
+            showSection(tabs.analytics);
+            setActiveTab("analytics-tab");
+        });
+
+        function setActiveTab(tabId) {
+            document.querySelectorAll(".nav ul li a").forEach(a => a.classList.remove("active"));
+            document.getElementById(tabId).classList.add("active");
+        }
+
+        // Fetch events and display in table with delete button
+        async function fetchEvents() {
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) throw new Error("Błąd przy pobieraniu wydarzeń");
+                const events = await response.json();
+
+                // Uaktualnij statystyki
+                document.getElementById("total-events").textContent = events.length;
+                // Możesz tu dodać inne statystyki jak total interest, popular category itd.
+
+                const tbody = document.getElementById("events-table-body");
+                tbody.innerHTML = "";
+
+                events.forEach(ev => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td>${ev.nazwa}</td>
+                        <td>${ev.lokalizacja}</td>
+                        <td>${new Date(ev.data).toLocaleString()}</td>
+                        <td>${ev.kategoria}</td>
+                        <td>0</td>
+                        <td><button class="btn btn-danger btn-sm delete-event-btn">Usuń</button></td>
+                    `;
+
+                    // Obsługa przycisku Usuń
+                    row.querySelector(".delete-event-btn").addEventListener("click", async () => {
+                        if (!confirm(`Na pewno usunąć wydarzenie "${ev.nazwa}"?`)) return;
+                        try {
+                            const res = await fetch(`${apiUrl}/${ev.id}`, { method: "DELETE" });
+                            if (res.status === 204) {
+                                alert("Wydarzenie usunięte");
+                                fetchEvents();
+                            } else {
+                                alert("Błąd przy usuwaniu wydarzenia");
+                            }
+                        } catch (err) {
+                            alert("Brak połączenia z API");
+                            console.error(err);
+                        }
+                    });
+
+                    tbody.appendChild(row);
+                });
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        // Dodawanie nowego eventu
+        document.getElementById("event-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const newEvent = {
+                nazwa: document.getElementById("event-name").value.trim(),
+                data: document.getElementById("event-date").value,
+                kategoria: document.getElementById("event-category").value,
+                lokalizacja: document.getElementById("event-location").value.trim(),
+                opis: document.getElementById("event-description").value.trim(),
+                // Dodaj inne pola, jeśli potrzebujesz
+            };
+
+            try {
+                const res = await fetch(apiUrl, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(newEvent),
+                });
+
+                if (!res.ok) throw new Error("Błąd przy dodawaniu wydarzenia");
+
+                alert("Wydarzenie dodane");
+                e.target.reset();
+                fetchEvents();
+            } catch (error) {
+                alert("Błąd połączenia z API");
+                console.error(error);
+            }
+        });
+
+        // Inicjalne pobranie eventów po załadowaniu strony
+        window.addEventListener("DOMContentLoaded", () => {
+            fetchEvents();
+        });
+    </script>
 </body>
 </html>

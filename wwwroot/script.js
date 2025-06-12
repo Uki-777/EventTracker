@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById(tabName).classList.add('active');
         document.getElementById(`${tabName}-tab`).classList.add('active');
         if (tabName === 'dashboard') {
-            fetchEvents(); // ⬅️ odśwież dane w tabeli przy wejściu na zakładkę
+            fetchEvents(); // odśwież dane w tabeli przy wejściu na zakładkę
         }
     }
 
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // 🟢 Funkcja do pobierania wydarzeń z API i wyświetlania w tabeli
+    // Funkcja do pobierania wydarzeń z API i wyświetlania w tabeli
     async function fetchEvents() {
         try {
             const res = await fetch('http://localhost:5062/events');
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <td>${new Date(ev.data).toLocaleString()}</td>
                     <td>${ev.kategoria}</td>
                     <td>${ev.lokalizacja}</td>
-                    <td>0</td> <!-- jeśli chcesz dodać zainteresowanie -->
+                    <td>0</td>
                     <td>-</td>
                 `;
                 tbody.appendChild(row);
@@ -77,7 +77,43 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // 🔔 Funkcja do pokazywania komunikatów
+    // Funkcja do pobierania plików i wyświetlania z przyciskiem usuwania
+    async function fetchFiles() {
+        try {
+            const res = await fetch('http://localhost:5062/files');
+            const files = await res.json();
+
+            const container = document.getElementById('files-container');
+            container.innerHTML = '';
+
+            files.forEach(file => {
+                const div = document.createElement('div');
+                div.classList.add('file-item');
+                div.textContent = file.fileName + ' ';
+
+                const btnDelete = document.createElement('button');
+                btnDelete.textContent = 'Usuń';
+                btnDelete.onclick = async () => {
+                    if (!confirm(`Na pewno usunąć plik "${file.fileName}"?`)) return;
+
+                    const delRes = await fetch(`http://localhost:5062/files/${file.id}`, { method: 'DELETE' });
+                    if (delRes.status === 204) {
+                        alert('Plik usunięty');
+                        fetchFiles();
+                    } else {
+                        alert('Błąd przy usuwaniu pliku');
+                    }
+                };
+
+                div.appendChild(btnDelete);
+                container.appendChild(div);
+            });
+        } catch (err) {
+            console.error('Błąd pobierania plików:', err);
+        }
+    }
+
+    // Funkcja do pokazywania komunikatów
     function showToast(msg) {
         const toast = document.getElementById('toast');
         toast.textContent = msg;
@@ -85,8 +121,9 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => { toast.className = 'toast'; }, 3000);
     }
 
-    // Od razu załaduj dane przy starcie
+    // Załaduj dane przy starcie
     fetchEvents();
+    fetchFiles();
 
     // Obsługa modali (logowanie/rejestracja)
     const loginBtn = document.getElementById('login-btn');

@@ -9,5 +9,8 @@ namespace EventTrackerApi.Data
             : base(options) { }
 
         public DbSet<EventEntity> Events { get; set; }
+
+        // Dodaj DbSet dla plików:
+        public DbSet<FileEntity> Files { get; set; }
     }
 }

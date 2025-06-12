@@ -156,6 +156,7 @@ C:\Users\lukas\EventTrackerApi\obj\Debug\net9.0\EventTrackerApi.pdb
 C:\Users\lukas\EventTrackerApi\obj\Debug\net9.0\EventTrackerApi.genruntimeconfig.cache
 C:\Users\lukas\EventTrackerApi\obj\Debug\net9.0\ref\EventTrackerApi.dll
 C:\Users\lukas\EventTrackerApi\bin\Debug\net9.0\EventTrackerApi.staticwebassets.runtime.json
-C:\Users\lukas\EventTrackerApi\obj\Debug\net9.0\compressed\758uxokes0-ajtus5x16l.gz
 C:\Users\lukas\EventTrackerApi\obj\Debug\net9.0\compressed\tno2fx9vc5-cwvm632k9y.gz
-C:\Users\lukas\EventTrackerApi\obj\Debug\net9.0\compressed\4r88udyndz-gqvw9h7smn.gz
+C:\Users\lukas\EventTrackerApi\obj\Debug\net9.0\EventTrackerApi.sourcelink.json
+C:\Users\lukas\EventTrackerApi\obj\Debug\net9.0\compressed\4r88udyndz-dgnokdu1pb.gz
+C:\Users\lukas\EventTrackerApi\obj\Debug\net9.0\compressed\758uxokes0-mb82a1sbin.gz
